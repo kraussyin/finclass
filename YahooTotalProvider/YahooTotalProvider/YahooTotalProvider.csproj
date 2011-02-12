@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9CF6735D-338C-4603-BE94-7F39EFD54E24}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YahooTotalProvider</RootNamespace>
+    <AssemblyName>YahooTotalProvider</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NLog, Version=1.0.0.505, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL" />
+    <Reference Include="PublicDomain, Version=0.2.44.0, Culture=neutral, PublicKeyToken=fd3f43b5776a962b, processorArchitecture=MSIL" />
+    <Reference Include="QuantFactory, Version=4.0.0.0, Culture=neutral, PublicKeyToken=4a567bc6414a8dc0, processorArchitecture=MSIL" />
+    <Reference Include="QuantFactory.Configuration, Version=4.0.0.0, Culture=neutral, PublicKeyToken=91e87cb2ccd4f0b0, processorArchitecture=MSIL" />
+    <Reference Include="QuantFactory.Utils, Version=4.0.0.0, Culture=neutral, PublicKeyToken=ef3e9dff162d4607, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Charting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=33fdaab052b7dfd0, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=844f265c18b031f9, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.ExcelLib, Version=5.0.1.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.File, Version=4.0.0.0, Culture=neutral, PublicKeyToken=ef2cf9f090c37083, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.FinChart, Version=4.0.0.0, Culture=neutral, PublicKeyToken=fa40cf3a1d625054, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.FIX, Version=4.0.0.0, Culture=neutral, PublicKeyToken=e0f42b44cd5e03f8, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.FIXApplication, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.FIXData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=d917e4b9291dd1ed, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Indicators, Version=4.0.0.0, Culture=neutral, PublicKeyToken=6c56f732c18efbfc, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Neural, Version=4.0.0.0, Culture=neutral, PublicKeyToken=4ddee599303c7188, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Principal, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b41e3a279a561a80, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Quant, Version=4.0.0.0, Culture=neutral, PublicKeyToken=3d719992588a10c1, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Series, Version=4.0.0.0, Culture=neutral, PublicKeyToken=146e613cf8c3e4a6, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Shared, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89a8b3160913539a, processorArchitecture=MSIL" />
+    <Reference Include="SmartQuant.Trading, Version=4.0.0.0, Culture=neutral, PublicKeyToken=91faa9ed5efa0d7c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
